@@ -2,6 +2,8 @@
 #include <iostream>      // std::cout を使うため
 #include <limits> // std::numeric_limits を使うため
 
+//何でやクソ野郎！！！
+
 int main() {
     // BC_Solver クラスのオブジェクトを作成
     BC_Solver solver;
