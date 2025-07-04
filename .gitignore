@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+.history/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# C++ build artifacts
+*.o
+*.obj
+*.so
+*.a
+*.out
+*.exe
+*.log
+*.dSYM/
+*.dll
+
+# その他
+*.tmp
+*.bak
+*.old
+
+# Python/Jupyter（もし使う場合）
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+*.dSYM/
+main
