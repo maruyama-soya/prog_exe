@@ -39,7 +39,7 @@ int main() {
 
     // ★変更: Solverの戻り値をチェックし、収束しなかった場合にメッセージを出す
     std::cout << "\n--- Solving by Jacobi Iteration ---" << std::endl;
-    if (!JJ.Solver(20000)) 
+    if (!JJ.Solver(15000)) 
     { // 最大反復回数を少し増やしてテスト
         std::cout << "\nERROR: Jacobi method did not converge within the maximum iterations." << std::endl;
     }
