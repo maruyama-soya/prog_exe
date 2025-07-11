@@ -93,8 +93,10 @@ public:
             for (int i = 0; i < myMAT.rows(); ++i) 
             {
                 double sigma = 0.0;
-                for (int j = 0; j < myMAT.cols(); ++j) {
-                    if (j != i) {
+                for (int j = 0; j < myMAT.cols(); ++j) 
+                {
+                    if (j != i) 
+                    {
                         sigma += myMAT(i, j) * x_old(j);
                     }
                 }
@@ -139,7 +141,8 @@ public:
                 std::cout << " -> Saving intermediate result at iteration " << iter << std::endl;
                 ofs_intermediate << std::endl << "# iter = " << iter << std::endl;
                 ofs_intermediate << Xmin << " " << Y0 << std::endl;
-                for(size_t i=0; i < x_new.size(); ++i) {
+                for(size_t i=0; i < x_new.size(); ++i) 
+                {
                     ofs_intermediate << (i+1)*dx << " " << x_new[i] << std::endl;
                 }
                 ofs_intermediate << Xmax << " " << Y1 << std::endl;
