@@ -1,17 +1,21 @@
 #include <iostream>
 
-class ENGINE{
+class ENGINE
+{
 public:
     int i;  //回転数
     std::string name; //エンジン名
-    ENGINE(){
+    ENGINE()
+    {
     }
-    void print(){
+    void print()
+    {
         std::cout << name << "の回転数は" << i << std::endl;
     }
 };
 
-int main() {
+int main() 
+{
     ENGINE E1, E2;
     E1.name = "エンジン1";
     E2.name = "エンジン2";
