@@ -18,17 +18,20 @@ class IC_Solver {
 public:
     int N;
 
-    IC_Solver(std::filesystem::path path) :N(100){
+    IC_Solver(std::filesystem::path path) :N(100)
+    {
        if (!std::filesystem::exists(path)) std::filesystem::create_directories(path);
        // ★修正: DataFolder を初期化
        DataFolder = path; // コンストラクタで受け取ったパスをメンバー変数に保存
        std::cout << "IC_Solver::Using DataFolder[" << DataFolder.string() << "]" << std::endl;
     }
-    IC_Solver(){
+    IC_Solver()
+    {
        throw("何やっとんじゃぼけ〜"); // エラーメッセージも具体的にすると良い
     }
 
-    void Solve(std::string filename){
+    void Solve(std::string filename)
+    {
     // ★修正済み：DataFolder を使って正しく上書き
     DataFile = DataFolder / filename;  // ← これが正解！
 
@@ -37,7 +40,8 @@ public:
 
     double dx = Xmax / N;             // 区間幅
     double y = Ymin, z = Zmin;        // 初期値
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++) 
+    {
         y = y + z * dx;
         z = z - C * y * dx;
         ofs << dx * (i + 1) << " " << y << std::endl;
